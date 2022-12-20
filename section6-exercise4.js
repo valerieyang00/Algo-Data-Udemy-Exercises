@@ -24,7 +24,6 @@ function areThereDuplicates(...variables) {
 
     for (let i=0; i < variables.length; i++) {
         let key= variables[i]
-        console.log(key)
         frequency[key] ? frequency[key]++ : frequency[key] = 1
         if (frequency[key] > 1) {
             return true
